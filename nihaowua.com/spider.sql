@@ -6,7 +6,7 @@ USE `sentence`;
 -- 导出  表 sentence.sexy 结构
 CREATE TABLE IF NOT EXISTS `sexy` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `content` varchar(50) NOT NULL,
+  `content` varchar(250) NOT NULL,
   `datetime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `content` (`content`)
